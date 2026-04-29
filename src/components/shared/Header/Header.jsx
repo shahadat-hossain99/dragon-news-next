@@ -5,9 +5,16 @@ import { compareAsc, format } from "date-fns";
 const Header = () => {
   const DateDisplay = () => {
     const today = new Date();
-    const formatted = format(today, "EEEE, MMMM dd, yyyy");
 
-    return <p className="text-gray-600 font-medium">{formatted}</p>;
+    const dayName = format(today, "EEEE");
+    const restDate = format(today, " MMMM dd, yyyy");
+
+    return (
+      <p>
+        <span className="font-bold">{dayName}</span>,
+        <span className="text-gray-600 font-medium"> {restDate}</span>
+      </p>
+    );
   };
 
   return (

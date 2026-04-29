@@ -22,7 +22,7 @@ const news = [
 const BreakingNews = () => {
   return (
     <div className="flex justify-between gap-4 items-center bg-gray-200 py-4 container mx-auto px-2">
-      <button className="btn cursor-text bg-pink-700 text-white">
+      <button className="btn cursor-text bg-red-600 text-white">
         Latest News
       </button>
       <Marquee pauseOnHover>

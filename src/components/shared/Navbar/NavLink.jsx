@@ -9,7 +9,9 @@ const NavLink = ({ href, children }) => {
   return (
     <Link
       className={
-        pathname === href ? "text-pink-700 font-semibold" : "text-gray-700"
+        pathname === href
+          ? "text-red-600 font-semibold border-b-2 border-b-red-500"
+          : "text-gray-700"
       }
       href={href}
     >

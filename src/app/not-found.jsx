@@ -14,10 +14,10 @@ const NotFound = () => {
       </p>
 
       {/* Divider */}
-      <div className="w-24 h-0.5 bg-primary my-6"></div>
+      <div className="w-24 h-0.5 bg-red-600 my-6"></div>
 
       {/* 404 */}
-      <h2 className="text-6xl font-bold text-error">404</h2>
+      <h2 className="text-6xl font-bold text-red-600">404</h2>
 
       <p className="mt-3 text-gray-500">
         This page doesn’t exist or has been moved.
@@ -25,7 +25,7 @@ const NotFound = () => {
 
       {/* Button */}
       <Link href="/">
-        <button className="btn btn-primary mt-6">Back to Home</button>
+        <button className="btn bg-red-600 mt-6 text-white">Back to Home</button>
       </Link>
     </div>
   );
