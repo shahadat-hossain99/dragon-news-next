@@ -1,13 +1,14 @@
 import Navbar from "@/components/shared/Navbar/Navbar";
 import React from "react";
+import { montserrat } from "../layout";
 
 const AuthLayout = ({ children }) => {
   return (
-    <>
+    <div className={`${montserrat.className}`}>
       <Navbar />
       <main>{children}</main>
-    </>
+    </div>
   );
 };
 
-export default layout;
+export default AuthLayout;
